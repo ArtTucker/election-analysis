@@ -6,3 +6,16 @@ candidate = "Diane"
 won_election = True
 
 help("keywords")
+
+counties = ["Arapahoe","Denver","Jefferson"]
+
+counties
+
+print(counties)
+
+print(counties[2])
+
+print(len(counties))
+
+counties[0:2]
+
