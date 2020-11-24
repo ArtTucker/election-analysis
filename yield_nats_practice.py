@@ -1,3 +1,5 @@
+import numpy as np
+
 grid = [[0,0,0,0,0,0,0,0,0],
         [0,0,0,0,0,0,0,0,0],
         [0,0,0,0,0,0,0,0,0],
@@ -7,8 +9,6 @@ grid = [[0,0,0,0,0,0,0,0,0],
         [0,0,0,0,0,0,0,0,0],
         [0,0,0,0,0,0,0,0,0],
         [0,0,0,0,0,0,0,0,0]]
-
-import numpy as np
 
 def possible(y,x,n):
     global grid
@@ -22,4 +22,3 @@ def possible(y,x,n):
             return
     print(np.matrix(grid))
     input("More?")
-
