@@ -51,7 +51,8 @@ counties_dict.keys()
 sum(counties_dict.values())
 
 counties_dict.get("Denver")
-counties_dict('Denver')
+
+counties_dict['Denver'] 
 
 voting_data = []
 voting_data.append({"county":"Arapahoe","registered_voters":422829})
