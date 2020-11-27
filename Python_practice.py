@@ -18,6 +18,17 @@ if 'Arapahoe' in counties and 'El Paso' not in counties:
 else:
     print('Arapahoe is in the list of counties and El Paso is not in the list.')
 
+print("     ")
+
 for county in counties:
     print(county)
 
+print("        ")
+
+for i in range(len(counties)):
+    print(counties[i])
+
+counties_dict = {"Arapahoe": 422829, "Denver": 463353, "Jefferson": 432438}
+
+for county in counties_dict:
+    print(counties_dict[county])
