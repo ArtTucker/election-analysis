@@ -32,3 +32,32 @@ counties_dict = {"Arapahoe": 422829, "Denver": 463353, "Jefferson": 432438}
 
 for county in counties_dict:
     print(counties_dict[county])
+
+voting_data = [{"county":"Arapahoe", "registered_voters": 422829},
+               {"county":"Denver", "registered_voters": 463353},
+               {"county":"Jefferson", "registered_voters": 432438}]
+
+for county_dict in voting_data:
+    print(county_dict)
+
+my_votes = int(input("How many votes did you get in the election? "))
+total_votes = int(input("What is the total votes in the election? "))
+print(f"I received {my_votes / total_votes * 100}% of the total votes.")
+
+print("      ")
+
+candidate_votes = int(input("How many votes did the candidate get in the election? "))
+total_votes = int(input("What is the total number of votes in the election? "))
+message_to_candidate = (
+    f"You received {candidate_votes} number of votes. "
+    f"The total number of votes in the election was {total_votes}. "
+    f"You received {candidate_votes / total_votes * 100}% of the total votes.")
+
+print(message_to_candidate)
+
+voting_data = [{"county":"Arapahoe", "registered_voters": 422829},
+                {"county":"Denver", "registered_voters": 463353},
+                {"county":"Jefferson", "registered_voters": 432438}]
+
+for county_data in voting_data:
+    print(f"{county_data.get('county')} county has {county_data.get('registered_voters'):,} registered voters.")
