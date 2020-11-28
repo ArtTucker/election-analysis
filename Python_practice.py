@@ -61,3 +61,12 @@ voting_data = [{"county":"Arapahoe", "registered_voters": 422829},
 
 for county_data in voting_data:
     print(f"{county_data.get('county')} county has {county_data.get('registered_voters'):,} registered voters.")
+
+print("        ")
+
+# Import the datetime class from the datetime module.
+import datetime
+# Use the now() attribute on the datetime class to get the present time.
+now = datetime.datetime.now()
+# Print the present time.
+print("The time right now is ", now)
