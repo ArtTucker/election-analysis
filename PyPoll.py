@@ -22,9 +22,11 @@ file_to_save = os.path.join("analysis", "election_analysis.txt")
 # Using the with statement open the file as a text file.
 with open(file_to_save, "w") as txt_file:
     # Write three counties to the file.
-    txt_file.write("Arapahoe.")
-    txt_file.write("Denver.")
-    txt_file.write("Jefferson.")
+    txt_file.write("Counties in the Election\n")
+    txt_file.write("-------------------------\n")
+    txt_file.write("Arapahoe\n")
+    txt_file.write("Denver\n")
+    txt_file.write("Jefferson")
 
 # Close the file.
 txt_file.close()
