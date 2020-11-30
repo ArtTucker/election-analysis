@@ -20,13 +20,14 @@ with open(file_to_load) as election_data:
 file_to_save = os.path.join("analysis", "election_analysis.txt")
 
 # Using the with statement open the file as a text file.
-outfile = open(file_to_save, "w")
-# Write some data to the file.
-outfile.write("Hello World! Here is some text.")
+with open(file_to_save, "w") as txt_file:
+    # Write three counties to the file.
+    txt_file.write("Arapahoe.")
+    txt_file.write("Denver.")
+    txt_file.write("Jefferson.")
 
 # Close the file.
-outfile.close()
-
+txt_file.close()
 
 # To do: perform analysis
 
