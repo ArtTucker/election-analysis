@@ -1,4 +1,4 @@
-# election-analysis
+# Election Analysis
  Election Analysis with Python - Module 3
 
 ## Project Overview
