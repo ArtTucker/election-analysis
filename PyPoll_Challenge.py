@@ -45,30 +45,24 @@ with open(file_to_load) as election_data:
         candidate_name = row[2]
 
         # 3: Extract the county name from each row.
+        county_name = row[2]
 
-
-        # If the candidate does not match any existing candidate add it to
-        # the candidate list
+        # If the candidate does not match any existing candidate add it to the candidate list
         if candidate_name not in candidate_options:
-
             # Add the candidate name to the candidate list.
             candidate_options.append(candidate_name)
-
             # And begin tracking that candidate's voter count.
             candidate_votes[candidate_name] = 0
 
         # Add a vote to that candidate's count
         candidate_votes[candidate_name] += 1
 
-        # 4a: Write a decision statement that checks that the
-        # county does not match any existing county in the county list.
-
-
+        # 4a: Write a decision statement that checks that the county does not match any existing county in the county list.
+        if county_name not in counties:
             # 4b: Add the existing county to the list of counties.
-
-
+            counties.append(county_name)
             # 4c: Begin tracking the county's vote count.
-
+            county_votes[county_name] = 0
 
         # 5: Add a vote to that county's vote count.
 
