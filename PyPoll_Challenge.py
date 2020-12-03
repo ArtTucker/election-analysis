@@ -1,4 +1,3 @@
-# -*- coding: UTF-8 -*-
 """PyPoll Homework Challenge Solution."""
 
 # Add our dependencies.
@@ -12,13 +11,11 @@ file_to_save = os.path.join("analysis", "election_analysis.txt")
 
 # Initialize a total vote counter.
 total_votes = 0
-
 # Candidate Options and candidate votes.
 candidate_options = []
 candidate_votes = {}
 
 # 1: Create a county list and county votes dictionary.
-
 
 
 # Track the winning candidate, vote count and percentage
@@ -27,7 +24,6 @@ winning_count = 0
 winning_percentage = 0
 
 # 2: Track the largest county and county voter turnout.
-
 
 
 # Read the csv and convert it into a list of dictionaries
@@ -95,7 +91,6 @@ with open(file_to_save, "w") as txt_file:
         # 6b: Retrieve the county vote count.
 
         # 6c: Calculate the percent of total votes for the county.
-
 
          # 6d: Print the county results to the terminal.
 
