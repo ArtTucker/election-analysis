@@ -29,7 +29,6 @@ county_voter_turnout = 0
 # Read the csv and convert it into a list of dictionaries
 with open(file_to_load) as election_data:
     reader = csv.reader(election_data)
-
     # Read the header
     header = next(reader)
 
