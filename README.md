@@ -1,8 +1,12 @@
 # Election Analysis
- Election Analysis with Python - Module 3
+An analysis of election data with Python 3
 
 ## Project Overview
-A colorado Board of Elections employee has biven you the following tasks to complete the election audit of a recent local congressional election.
+In this excercise a Colorado Board of Elections employee has requested an election audit of a recent local congressional election. The raw data was provided as a CSV (comma separated values) file, consisting of a list of unique ballot IDs, the counties in which the votes were cast, and the names of the candidates for who the votes were cast.
+
+![Raw Election Data in CSV format](analysis/election_results_csv.png)
+
+
 
 1. Clculate the total number of votes cast.
 2. Get a complete list of candidates who received votes.
