@@ -56,3 +56,4 @@ Another alteration to consider would be to have the program send out summary ema
 - hardcoded the message to send -- in this case, the analysis summary,
 - script some feedback statements so you know if the messages were successfully sent or not.
 
+Once these changes are made, all you should need to do is run the script... and the power of democracy is at your fingertips.
