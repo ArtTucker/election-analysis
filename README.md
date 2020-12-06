@@ -49,4 +49,10 @@ If the source data also included municipalities or voting districts in the CSV f
 - a new for loop to calculate totals, percentages, and highest values,
 - a new print statement to declare largest values.
 
-Another thing to consider with larger datasets is that, 
+Another alteration to consider would be to have the program send out summary emails (to the Board of Elections or other officials) once the analysis was finished. A thorough guide can be found [here](https://thepythonguru.com/sending-emails-in-python-tutorial-with-code-examples/), but the basic process would be to:
+- `import smtplib`,
+- setup your SMTP mail server, with login credentials,
+- provide a list of email recipients, either hardcoded into the script or via an external txt file,
+- hardcoded the message to send -- in this case, the analysis summary,
+- script some feedback statements so you know if the messages were successfully sent or not.
+
