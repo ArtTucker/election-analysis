@@ -40,5 +40,13 @@ As indicated in the screenshot shown above, of the results printed to the termin
 - The winner of the election was:
     - Diana DeGette
 
-## Challenge Summary
+## Election Audit Summary
+This analysis program is basic enough that it should be usable on any future (or past) election results, as long as the data is presented in a similarly formatted CSV file. The number of voting ballots, different candidate names, or different counties listed should not prove to be limiting factors. However, performance may be hindered or slowed by significantly larger datasets (perhaps at multiple millions of entries or more).
 
+If the source data also included municipalities or voting districts in the CSV file, a potential easy improvement on this code could also allow for ranking of those districts by turnout. The only needed additions would be:
+- the declaration of new variables (related to the metrics in question),
+- a new "decision statement" to run through the values by row,
+- a new for loop to calculate totals, percentages, and highest values,
+- a new print statement to declare largest values.
+
+Another thing to consider with larger datasets is that, 
